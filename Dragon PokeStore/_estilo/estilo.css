@@ -1,0 +1,19 @@
+*{
+    font-family: arial;
+    text-align: center;
+}
+
+@font-face{
+    font-family: "pokemon-normal";
+    src: url(../_fontes/pokemon-normal.ttf);
+}
+
+#titulo{
+    font-family: "pokemon-normal";
+    color: red;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 3px rgba(0,0,0,.5);
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: white;
+}

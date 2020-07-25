@@ -3,17 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="_estilo/estilo.css">
+    <script src="_script/carrinho.js"></script>
     <title>Dragon PokéStore</title>
 </head>
 <body>
-    <header><h1 id="titulo">Dragon's PokéStore</h1></header>
+    <header class="cabecalho">
+        <h1 id="titulo">Dragon's PokéStore</h1>
+        <input type="text" id="pesquisar" placeholder="Pesquise seu pokémon!">
+        <button id="btn-pesquisa">o</button>
+    </header>
     <div class="catalogo">
-        Principal
+        <h2>Catálogo</h2>
+        <table class="catalogo"></table>
     </div>
-    <aside class="carrinho">
-        <button>ENVIAR</button>
-    </aside>
-    <footer>
+    <div class="carrinho">
+        <h2>Carrinho</h2>
+        <table id="tabela1">
+            <tr>
+                
+            </tr>
+        </table><br>
+        <h2>Total</h2>
+        <table>
+            <tr id="desconto">
+                
+            </tr>
+            <tr id="total"></tr>
+        </table>
+        <button>FINALIZAR</button>
+    </div>
+    <footer class="rodape">
         <p>
             Dragon's PokéStore<br/>
             By. B2W

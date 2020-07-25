@@ -1,6 +1,9 @@
 *{
+    margin: auto;
     font-family: arial;
     text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 @font-face{
@@ -8,12 +11,86 @@
     src: url(../_fontes/pokemon-normal.ttf);
 }
 
+.cabecalho, .catalogo, .carrinho{
+    margin-bottom: 30px;
+}
+
+.cabecalho{
+    margin-top: auto;
+}
+
+.catalogo{
+    
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
 #titulo{
     font-family: "pokemon-normal";
     color: red;
-    font-size: 80px;
+    font-size: 15vw;
     letter-spacing: 5px;
-    text-shadow: 3px 3px 3px rgba(0,0,0,.5);
-    -webkit-text-stroke-width: .1px;
+    text-shadow: 5px 5px 10px rgba(0,0,0,.5);
+    -webkit-text-stroke-width: .5pt;
     -webkit-text-stroke-color: white;
+}
+
+#pesquisar{
+    width: 70%;
+}
+
+#btn-pesquisa{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bolder;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    font-size: 15px;
+    background-image: linear-gradient(red 50%,black 30%, white 23%);
+}
+
+.rodape{
+    clear: both;
+    border-top: 1px solid rgba(0,0,0,.05);
+    padding: 5px;
+}
+
+/* Media Query Tela Grande */
+@media screen and (min-width: 1080px){
+    .cabecalho{
+        height: 200px;
+        margin-top: 0px;
+    }
+
+    #titulo{
+        font-size: 75px;
+        color: red;
+    }
+
+    #pesquisar{
+        width: 300px;
+    }
+
+    #titulo{
+        margin-bottom: -15px;
+    }
+
+    .catalogo{
+        float: left;
+        width: 61%;
+        border-bottom: none;
+    }
+
+    .carrinho{
+        float: right;
+        width: 35%;
+        background-color: red;
+        padding: 5px;
+        color: white;
+        font-weight: bolder;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0,0,0,.1);
+        border-bottom: none;
+        border-radius: 10px;
+    }
 }
